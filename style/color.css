@@ -1,0 +1,47 @@
+.about_content p , .alternate.dark .text p, button {
+    color: white;
+}
+
+.about_content .separator, .bar1, .bar2, .bar3, .bar_left, .bar_right, button, .form-left-decoration, .form-right-decoration {
+    background-color: #edb63b;
+}
+
+h3, #menu .menu_element a {
+    color: #edb63b;
+}
+
+.alternate.light, .circle, .form-left-decoration:before, .form-left-decoration:after, .form-right-decoration:before, .form-right-decoration:after, form {
+    background-color: white;
+}
+
+.alternate.light .text p {
+    color: black;
+}
+
+#menu .menu_element a:hover {
+    color: #bd860b;
+}
+
+button {
+    border-bottom:#bd860b;
+}
+
+button:hover {
+    background-color: #bd860b;
+} 
+
+header {
+    background-color:#2b333c;
+}
+
+body {
+    background-color: #3a424b;
+}
+
+.form-inner input, .form-inner textarea {
+    background-color: #d0dfe8;
+}
+
+#menu {
+    background-color: rgba(255,255,255,0.3);
+}
