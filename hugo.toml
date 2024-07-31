@@ -1,0 +1,4 @@
+baseURL = 'https://eirbot.eirb.fr/'
+languageCode = 'fr-fr'
+title = 'Eirbot'
+theme = "occult-eirbot"

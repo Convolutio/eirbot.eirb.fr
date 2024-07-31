@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+  {{ block "extend_head" . }}
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  {{ end }}
+</head>
+<body>
+  {{/* TODO: put this partial into a header tag */}}
+  {{ partial "header.html" . }}
+  {{/* TODO: put all of this below into a main tag */}}
+  <div id="content">
+    {{ block "main" . }}{{ end }}
+  </div>
+  <footer>
+    {{ partial "footer.html" . }}
+    {{ block "extend_footer" . }}{{ end }}
+  </footer>
+</body>
+</html>
