@@ -28,7 +28,7 @@ header {
     cursor: pointer;
 }
 
-#content {
+main {
     padding-top: 10%;
     transition: 0.4s;
     display: flex;
@@ -37,7 +37,7 @@ header {
     align-items: center;
 }
 
-#content.change {
+main .change {
     filter: blur(4px);
 }
 
@@ -110,6 +110,12 @@ header {
 
 #menu .menu_element {
     margin-top: 30px;
+}
+
+#menu .menu_element p {
+    text-decoration: underline;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 #menu .menu_element a {

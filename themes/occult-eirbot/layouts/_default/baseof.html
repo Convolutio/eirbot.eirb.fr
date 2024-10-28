@@ -7,12 +7,16 @@
   {{ end }}
 </head>
 <body>
-  {{/* TODO: put this partial into a header tag */}}
+  <header>
   {{ partial "header.html" . }}
-  {{/* TODO: put all of this below into a main tag */}}
-  <div id="content">
+  </header>
+  <nav>
+  {{ partial "menu.html" . }}
+  </nav>
+
+  <main>
     {{ block "main" . }}{{ end }}
-  </div>
+  </main>
   <footer>
     {{ partial "footer.html" . }}
     {{ block "extend_footer" . }}{{ end }}

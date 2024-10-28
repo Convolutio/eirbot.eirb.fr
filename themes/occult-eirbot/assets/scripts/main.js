@@ -18,7 +18,7 @@ function scrollFunction() {
 function menuClick() {
   this.classList.toggle("change");
   document.getElementById("menu").classList.toggle("change");
-  document.getElementById("content").classList.toggle("change");
+  document.getElementsByTagName("main")[0].classList.toggle("change");
 } 
 
 function arrowClick() {
