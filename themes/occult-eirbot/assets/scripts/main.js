@@ -30,4 +30,4 @@ function goToHome() {
 }
 
 let viewport_height = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-document.getElementsByClassName("subheader")[0].setAttribute("style", "height:"+String(viewport_height)+"px;");
+document.getElementsByClassName("subheader")[0]?.setAttribute("style", "height:"+String(viewport_height)+"px;");

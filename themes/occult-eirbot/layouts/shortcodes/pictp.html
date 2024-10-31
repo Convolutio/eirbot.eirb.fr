@@ -1,0 +1,10 @@
+<div class="about_content">
+  {{ $title := default "" (.Get "title") }}
+  {{ with default (resources.Get "images/placeholder.png") (resources.Get (.Get "bg-picture")) }}
+  <h3 style='background-image: url("{{ .Permalink }}");'>
+    {{ upper $title }}
+  </h3>
+  {{ end }}
+  <p>{{ markdownify .Inner }}</p>
+  <div class="separator"></div>
+</div>

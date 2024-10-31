@@ -6,23 +6,16 @@ layout = "about"
   weight = 10
 +++
 
-<div class="about_content about_eirbot">
-  <h3>
-    À PROPOS DE L'ASSOCIATION
-  </h3>
-  <p>Eirbot est un regroupement de passionnés qui forment une équipe
-  soudée. Depuis 1997, Eirbot participe à la coupe de France de
+{{< pictp title="À propos de l'association" >}}
+  Eirbot est un regroupement de **passionnés** qui forment une équipe
+  **soudée**. Depuis 1997, Eirbot participe à la coupe de France de
   robotique. L'association permet aussi la réalisation de nombreux
   projets personnels (solveur de Rubik's cube, voitures
   télécommandées...).
-  </p>
-  <div class="separator"></div>
-</div>
-<div class="about_content about_enseirb_matmeca">
-  <h3>
-    À PROPOS DE NOTRE ÉCOLE
-  </h3>
-  <p>L’ENSEIRB-MATMECA est une école proposant six formations
+{{< /pictp >}}
+
+{{< pictp title="À propos de notre école" >}}
+  L’ENSEIRB-MATMECA est une école proposant six formations
   d’ingénieurs spécialistes de haut niveau reconnues par le monde
   industriel et couvrant le domaine du numérique au sens large :
   l’électronique, l’informatique, le calcul haute performance et la
@@ -34,14 +27,10 @@ layout = "about"
   permettant aux étudiants d'évoluer en autonomie dans
   diverses associations. Ainsi, cela fait plus de 25 ans que
   l'association Eirbot y exerce ses activités.
-  </p>
-  <div class="separator"></div>
-</div>
-<div class="about_content about_robocup">
-  <h3>
-    LA COUPE DE FRANCE DE ROBOTIQUE
-  </h3>
-  <p>Événement populaire depuis 1994, la coupe de France de
+{{< /pictp >}}
+
+{{< pictp title="La Coupe de France de Robotique" >}}
+  Événement populaire depuis 1994, la coupe de France de
   robotique est le premier rassemblement d'écoles d'ingénieurs
   européens. L'an dernier il a réuni 1500 élèves ingénieurs et plus de
   5000 visiteurs.
@@ -50,6 +39,4 @@ layout = "about"
   édition. Ce robot jouera ensuite de nombreux matchs au cours des
   4 jours de compétition.
   Depuis sa création en 1997 Eirbot participe à cet événement.
-  </p>
-  <div class="separator"></div>
-</div>
+{{< /pictp >}}
