@@ -1,0 +1,39 @@
+{{ $imgref := (resources.Get "images/img_lights_wide.jpg").RelPermalink }}
+{{ partial "head/css" "css/slides.css" }}
+{{ partial "head/js" "scripts/slides.js" }}
+<div class="slide-container">
+  <!-- Slideshow container -->
+  <div class="slide-slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="slide-mySlides slide-fade">
+      <div class="slide-numbertext">1 / 3</div>
+      <img src="{{ $imgref }}" style="width:100%">
+      <div class="slide-text">Caption Text</div>
+    </div>
+
+    <div class="slide-mySlides slide-fade">
+      <div class="slide-numbertext">2 / 3</div>
+      <img src="{{ $imgref }}" style="width:100%">
+      <div class="slide-text">Caption Two</div>
+    </div>
+
+    <div class="slide-mySlides slide-fade">
+      <div class="slide-numbertext">3 / 3</div>
+      <img src="{{ $imgref }}" style="width:100%">
+      <div class="slide-text">Caption Three</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <button class="slide-prev">&#10094;</button>
+    <button class="slide-next">&#10095;</button>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <button class="slide-dot"></button>
+    <button class="slide-dot"></button>
+    <button class="slide-dot"></button>
+  </div>
+</div>
