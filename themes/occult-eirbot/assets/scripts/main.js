@@ -5,19 +5,19 @@ document.getElementById("header_logo").addEventListener("click",goToHome);
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header_logo").style.width = "5%";
+    document.getElementsByTagName("header")[0].style.height = "7vh";
     document.getElementById("header_arrow").style.opacity = "1";
-    document.getElementById("menu").style.paddingTop = "7%";
+    // document.getElementsByTagName("nav")[0].style.paddingTop = "7%";
   } else {
-    document.getElementById("header_logo").style.width = "10%";
+    document.getElementsByTagName("header")[0].style.height = "13vh";
     document.getElementById("header_arrow").style.opacity = "0";
-    document.getElementById("menu").style.paddingTop = "12%";
+    // document.getElementsByTagName("nav")[0].style.paddingTop = "12%";
   }
 }
 
 function menuClick() {
   this.classList.toggle("change");
-  document.getElementById("menu").classList.toggle("change");
+  document.getElementsByTagName("nav")[0].classList.toggle("change");
   document.getElementsByTagName("main")[0].classList.toggle("change");
 } 
 

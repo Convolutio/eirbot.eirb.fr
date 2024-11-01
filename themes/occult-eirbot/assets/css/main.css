@@ -7,29 +7,30 @@ html, body {
     height: 100%;
 }
 
+body > * {
+    width: 100vw;
+}
+
 header {
     position: fixed;
-    width: 92%;
-    padding-left: 4%;
-    padding-right: 4%;
-    margin: auto;
+    height: 13vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
+    transition: 0.3s;
 }
 
 #header_logo {
-    width: 10%;
+    height: 100%;
     position: relative;
-    transition: 0.3s;
-    margin-top: 10px;
-    margin-bottom: 10px;
     cursor: pointer;
 }
 
 main {
-    padding-top: 10.5%;
+    padding-top: 15vh;
     transition: 0.4s;
     display: flex;
     flex-direction: column;
@@ -42,14 +43,20 @@ main .change {
 }
 
 #header_menu {
-    display: relative;
+    width: 10%;
+    min-width: 45px;
+    height: 100%;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
   
 .bar1, .bar2, .bar3 {
     width: 45px;
     height: 6px;
-    margin: 11px 0;
+    margin: 5px 0;
     transition: 0.4s;
 }
   
@@ -66,12 +73,14 @@ main .change {
 }
 
 #header_arrow {
-    display: relative;
     cursor: pointer;
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    width: 10%;
+    min-width: 45px;
+    height: 100%;
+    aspect-ratio: 93/50;
     opacity: 0;
     transition: 0.4s;
 }
@@ -93,19 +102,31 @@ main .change {
     left: -9px;
 }
 
-#menu {
+nav {
     position: fixed;
-    padding-top: 12%;
+    right: min(-25vw, -300px);
+    width: 25vw;
+    min-width: 300px;
+    padding-top: 9vh;
+    height: 91vh;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+nav.change {
+    right: 0px;
+}
+
+#menu {
     font-family: "Arvo";
     font-size: 2em;
     text-align: right;
-    right: -30%;
     list-style-type: none;
-    transition: 0.4s;
-    width: 25%;
-    padding-right: 50px;
+    width: 75%;
+    padding-top: 20%;
+    padding-right: 15%;
+    padding-left: 10%;
     height: 100%;
-    z-index: 1;
 }
 
 #menu .menu_element {
@@ -124,10 +145,6 @@ main .change {
 
 #menu .menu_element a:hover {
     cursor: pointer;
-}
-
-#menu.change {
-    right: 0px;
 }
 
 footer {
