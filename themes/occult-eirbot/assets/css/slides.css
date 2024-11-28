@@ -19,6 +19,7 @@
 
 /* Next & previous buttons */
 .slide-prev, .slide-next {
+  all: unset; /* Resets all inherited and default styles */
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -64,8 +65,16 @@
   top: 0;
 }
 
+.slide-picture {
+  width: 100%;
+  min-height: 30vh;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* The dots/bullets/indicators */
 .slide-dot {
+  all: unset;
   cursor: pointer;
   height: 15px;
   width: 15px;

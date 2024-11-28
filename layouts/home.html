@@ -9,7 +9,7 @@
 {{ $menuPages := site.Menus.main.ByWeight }}
 {{ range seq (sub (len $menuPages) 1) }}
   {{ $page := index $menuPages . }}
-  <div id="{{ $page.URL }}" class="{{ cond (mod . 2) "alternate dark" "alternate light" }}">
+  <div id="{{ $page.URL }}" class="{{ cond (eq (mod . 2) 1) "alternate dark" "alternate light" }}">
     <!-- <img src="/images/placeholder.png" alt="generic about us image"> -->
     <div class="back-img"></div>
     <div class="text">
