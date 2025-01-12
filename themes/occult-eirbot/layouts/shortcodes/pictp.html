@@ -1,10 +1,3 @@
-<div class="about_content">
-  {{ $title := default "" (.Get "title") }}
-  {{ with default (resources.Get "images/placeholder.png") (resources.Get (.Get "bg-picture")) }}
-  <h3 style='background-image: url("{{ .RelPermalink }}");'>
-    {{ upper $title }}
-  </h3>
-  {{ end }}
-  <p>{{ markdownify .Inner }}</p>
-  <div class="separator"></div>
-</div>
+{{ partial "pictureTitleParagraph.html" (
+dict "bgPicture" (.Get "bg-picture") "givenTitle" (.Get "title")
+"givenContent" (partial "rawMdToHTML" (dict "page" .Page "content" .Inner))) }}

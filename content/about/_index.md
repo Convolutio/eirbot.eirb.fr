@@ -6,16 +6,8 @@ layout = "about"
   weight = 10
 +++
 
-{{< pictp title="À propos de l'association" >}}
-  Eirbot est un regroupement de **passionnés** qui forment une équipe
-  **soudée**. Depuis 1997, Eirbot participe à la coupe de France de
-  robotique. L'association permet aussi la réalisation de nombreux
-  projets personnels (solveur de Rubik's cube, voitures
-  télécommandées...).
-{{< /pictp >}}
-
-{{< pictp title="À propos de notre école" >}}
-  L’ENSEIRB-MATMECA est une école proposant six formations
+{{< pictp title="À propos de notre école" bg-picture="images/team_coupe.jpg" >}}
+  L’***ENSEIRB-MATMECA*** est une école proposant six formations
   d’ingénieurs spécialistes de haut niveau reconnues par le monde
   industriel et couvrant le domaine du numérique au sens large :
   l’électronique, l’informatique, le calcul haute performance et la
@@ -29,7 +21,8 @@ layout = "about"
   l'association Eirbot y exerce ses activités.
 {{< /pictp >}}
 
-{{< pictp title="La Coupe de France de Robotique" >}}
+{{< pictp title="La Coupe de France de Robotique"
+bg-picture="images/coupe_france.jpg" >}}
   Événement populaire depuis 1994, la coupe de France de
   robotique est le premier rassemblement d'écoles d'ingénieurs
   européens. L'an dernier il a réuni 1500 élèves ingénieurs et plus de
