@@ -4,11 +4,16 @@
 {{ end }}
 {{ define "main" }}
   {{ range .Pages }}
-
+  {{ $cleanDescription := 0 }}
+  {{ if .Params.description }}
+  {{ $cleanDescription = (partial "rawMdToHTML" (dict "page" .Page "content" .Params.description)) }}
+  {{ end }}
   {{ partial "pictureTitleParagraph.html" (dict
   "bgPicture" .Params.mainPicture
   "givenTitle" (default .Title .Params.externalTitle)
-  "givenContent" (default .Summary (partial "rawMdToHTML" (dict "page" .Page "content" .Params.description)))) }}
+  "givenContent" (default .Summary $cleanDescription)
+  "givenLink" .RelPermalink
+  ) }}
   {{ end }}
   {{ .Content }}
 {{ end }}

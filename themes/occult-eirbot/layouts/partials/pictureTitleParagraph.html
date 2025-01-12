@@ -1,5 +1,8 @@
 {{ $bgPicLink := (default (resources.Get "images/placeholder.png") (resources.Get .bgPicture)).RelPermalink }}
 <div class="about_content">
+  {{ if .givenLink }}
+  <a href="{{ .givenLink }}">
+  {{ end }}
   {{ $title := default "" .givenTitle }}
   {{ with $bgPicLink }}
   <h3 style='background-image: url("{{ . }}");'>
@@ -7,5 +10,8 @@
   </h3>
   {{ end }}
   {{ .givenContent }}
+  {{ if .givenLink }}
+  </a>
+  {{ end }}
   <div class="separator"></div>
 </div>

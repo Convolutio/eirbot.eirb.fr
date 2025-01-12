@@ -1,7 +1,6 @@
 +++
 title = "L'Équipe"
 externalTitle = "À propos de l'association"
-description = "Découvrez l'équipe car elle est ***beaucoup trop*** géniale."
 mainPicture = "images/eirbot_logo_robot.jpg"
 draft = true
 layout = "construction"

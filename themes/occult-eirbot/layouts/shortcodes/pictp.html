@@ -1,3 +1,6 @@
-{{ partial "pictureTitleParagraph.html" (
-dict "bgPicture" (.Get "bg-picture") "givenTitle" (.Get "title")
-"givenContent" (partial "rawMdToHTML" (dict "page" .Page "content" .Inner))) }}
+{{ partial "pictureTitleParagraph.html" (dict
+"bgPicture" (.Get "bg-picture")
+"givenTitle" (.Get "title")
+"givenContent" (partial "rawMdToHTML" (dict "page" .Page "content" .Inner))
+"givenLink" (default "" (.Get "href"))
+) }}
