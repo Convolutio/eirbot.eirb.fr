@@ -1,9 +1,7 @@
 {{ define "main" }}
 
-<div class="subheader">
-  <h3>{{ upper .Title }}</h3>
-  {{ .Content }}
-</div>
+{{ partial "picSubheader.html" (dict "givenTitle" .Title "givenContent"
+.Content "bgPicture" "images/recompense_prix_mediation.jpeg") }}
 
 {{/* Index the menu pages excepted the home page */}}
 {{ $menuPages := site.Menus.main.ByWeight }}

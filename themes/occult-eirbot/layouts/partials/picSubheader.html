@@ -1,0 +1,5 @@
+{{ $bgPicLink := (default (resources.Get "images/placeholder.png") (resources.Get .bgPicture)).RelPermalink }}
+<div class="subheader" style='background-image: url("{{ $bgPicLink }}");'>
+  <h3>{{ upper .givenTitle }}</h3>
+  {{ .givenContent }}
+</div>

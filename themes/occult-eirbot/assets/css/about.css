@@ -12,6 +12,8 @@
     width: 100%;
     background-image: url("/images/placeholder.png");
     background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .about_content p {
