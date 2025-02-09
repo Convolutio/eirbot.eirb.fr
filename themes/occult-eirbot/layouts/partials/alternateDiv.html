@@ -4,14 +4,21 @@
 {{ $contentTitle := .contentTitle }}
 {{ $contentDescription := .contentDescription }}
 {{ $altText := .altText }}
-<div id="{{ $url }}" class="{{ cond (eq ($isDark) 1) "alternate dark" "alternate light" }}">
-  <div class="back-img">
-  {{ with default (resources.Get "/images/placeholder.png") (resources.Get $mainPicture) }}
-  <img src="{{ .RelPermalink }}" alt="{{ $altText }}"/>
+<div class="{{ cond (eq ($isDark) 1) "alternate dark" "alternate light" }}">
+  {{ if $url }}
+  <a href="{{ $url }}">
   {{ end }}
-  </div>
-  <div class="text">
-    <h3>{{ upper $contentTitle }}</h3>
-    <p>{{ $contentDescription }}</p>  
-  </div>
+    {{ with default (resources.Get "/images/placeholder.png") (resources.Get $mainPicture) }}
+    {{ $isClipart := in (slice ".png" ".svg") (path.Ext .RelPermalink | lower) }}
+    <div class="back-img {{ cond $isClipart "clipart" "thumb" }}">
+      <img src="{{ .RelPermalink }}" alt="{{ $altText }}"/>
+    </div>
+    {{ end }}
+    <div class="text">
+      <h3>{{ upper $contentTitle }}</h3>
+      <p>{{ $contentDescription }}</p>  
+    </div>
+  {{ if $url }}
+  </a>
+  {{ end }}
 </div>

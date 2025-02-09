@@ -2,6 +2,7 @@
 title = "Ressources"
 description = "Toutes nos archives partagées"
 layout = "about"
+draft = true
 mainPicture = "images/robot_main_coupe.jpg"
 [menus.main]
   weight = 50
