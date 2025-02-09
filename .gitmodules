@@ -1,3 +1,3 @@
 [submodule "mail_server"]
 	path = mail_server
-	url = git@github.com:Eliran-Turgeman/Collecto.git
+	url = https://github.com/Eliran-Turgeman/Collecto.git
