@@ -11,7 +11,7 @@
   "url" $page.URL
   "mainPicture" $page.Page.Params.mainPicture
   "isDark" (cond (eq (mod . 2) 1) 1 0)
-  "contentTitle" $page.Name
+  "contentTitle" (default $page.Name $page.Page.Params.externalTitle)
   "contentDescription" $page.Page.Description
   "altText" (default "" $page.Page.Params.altText)
   ) }}

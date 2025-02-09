@@ -3,6 +3,14 @@
 {{ partial "head/css" "css/about.css" }}
 {{ end }}
 {{ define "main" }}
+  <!-- host tab -->
+  {{ partial "pictureTitleParagraph.html" (dict
+  "bgPicture" (default .Params.mainPicture .Params.hostPicture)
+  "givenTitle" (default .Params.externalTitle .Title)
+  "givenContent" (default .Summary (partial "rawMdToHTML" (dict "page" . "content" (default .Params.description .Params.pageDescription))))
+  "givenLink" (default "" .Params.introRedirectLink)
+  ) }}
+  <!-- indexed tabs -->
   {{ range .Pages.ByWeight }}
   {{ $cleanDescription := 0 }}
   {{ if .Params.description }}

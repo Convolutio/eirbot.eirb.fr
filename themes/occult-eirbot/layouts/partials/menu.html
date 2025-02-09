@@ -2,10 +2,11 @@
     {{ $currentPagePermalink := .Page.Permalink }}
     {{ range site.Menus.main.ByWeight }}
     <li class="menu_element">
+      {{ $pageTitle := default .Name .Page.Params.externalTitle }}
       {{ if eq .Page.Permalink $currentPagePermalink }}
-      <p>{{ .Name }}</p>
+      <p>{{ $pageTitle }}</p>
       {{ else }}
-      <a href="{{ .URL }}">{{ .Name }}</a>
+      <a href="{{ .URL }}">{{ $pageTitle }}</a>
       {{ end }}
     </li>
     {{ end }}

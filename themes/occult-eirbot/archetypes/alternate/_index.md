@@ -1,5 +1,6 @@
 +++
 title = "\"Alternate\" section"
+
 description = "Section with the \"alternate\" layout"
 pageDescription = """Nibh semper tempus, mi hac eu vitae in fusce suspendisse.
 Quam faucibus amet bibendum amet **viverra natoque viverra** bibendum nisi.
@@ -7,9 +8,12 @@ Fringilla magna vitae eu diam *enim convallis* odio id nisl. Semper tincidunt,
 aliquam ac varius convallis placerat ornare habitasse, convallis. Nisl
 eleifend, sagittis sed a efficitur sed sit, et faucibus.
 """
+
 draft = true
-date = {{ time.Now.Format "2 Jan 2006" }}
+date = '{{ time.Now.Format "2 Jan 2006" }}'
+
 mainPicture = "images/logo.png"
+
 layout = "alternate"
 +++
 

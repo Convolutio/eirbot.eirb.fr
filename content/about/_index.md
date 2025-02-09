@@ -1,8 +1,20 @@
 +++
-title = "À propos"
+externalTitle = "À propos"
+title = "À propos de l'association"
+
 description = "Vous souhaitez en savoir plus sur nous et notre école ?"
-layout = "about"
+pageDescription = """Eirbot est un regroupement de **passionnés** qui forment une
+équipe **soudée**. Depuis 1997, Eirbot participe à la coupe de France de
+robotique. L'association permet aussi la réalisation de nombreux projets
+personnels (solveur de Rubik's cube, voitures télécommandées...)."""
+
+date = '9 Feb 2025'
+
 mainPicture = "images/eirbot_logo_robot.jpg"
+hostPicture = "images/team_coupe.jpg"
+
+layout = "about"
+
 [menus.main]
   weight = 10
 +++

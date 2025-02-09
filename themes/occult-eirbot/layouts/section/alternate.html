@@ -10,7 +10,7 @@
   "url" $page.RelPermalink
   "mainPicture" $page.Params.mainPicture
   "isDark" (cond (eq (mod . 2) 0) 1 0)
-  "contentTitle" $page.Title
+  "contentTitle" (default $page.Title $page.Params.externalTitle)
   "contentDescription" $page.Description
   "altText" (default "" $page.Params.altText)
   ) }}

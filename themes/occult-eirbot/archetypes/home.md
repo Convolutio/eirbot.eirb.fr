@@ -1,7 +1,7 @@
 +++
 title = "Home page title"
 mainPicture = "images/logo.png"
-date = {{ time.Now.Format "2 Jan 2006" }}
+date = '{{ time.Now.Format "2 Jan 2006" }}'
 draft = true
 +++
 
