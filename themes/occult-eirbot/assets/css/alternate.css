@@ -28,6 +28,7 @@
   width: 100%;
   justify-content: space-around;
   cursor: pointer;
+  padding: 0.75% 0px 0.75% 0px;
 }
 
 .alternate * {
@@ -44,26 +45,19 @@
   width: 50%;
 }
 
-.alternate img {
-  object-fit: cover;
-  height: 120px;
-  margin: 5% 0px 5% 0px;
-}
-
 .alternate.light {
   flex-direction: row-reverse;
 }
 
-.alternate.partners {
-  /* padding: 4% 0px 4% 0px; */
+.alternate .back-img {
+  width: 40%;
+  border: solid;
 }
 
-.alternate .back-img {
+.alternate .back-img img {
+  width: 100%;
   height: 100%;
-  width: 40%;
-  background-position: center;
-  background-image: url(/images/placeholder.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
+  filter: blur(1.5px);
 }
 

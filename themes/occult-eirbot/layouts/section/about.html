@@ -3,7 +3,7 @@
 {{ partial "head/css" "css/about.css" }}
 {{ end }}
 {{ define "main" }}
-  {{ range .Pages }}
+  {{ range .Pages.ByWeight }}
   {{ $cleanDescription := 0 }}
   {{ if .Params.description }}
   {{ $cleanDescription = (partial "rawMdToHTML" (dict "page" .Page "content" .Params.description)) }}

@@ -1,5 +1,6 @@
 +++
 title = "Eirbot : Association de Robotique"
+mainPicture = "images/recompense_prix_mediation.jpeg"
 +++
 
 Club de robotique créé en 1997 au sein de l'école d'ingénieur Enseirb-Matmeca,

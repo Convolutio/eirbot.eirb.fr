@@ -1,7 +1,8 @@
 +++
 title = "L'Équipe"
 externalTitle = "À propos de l'association"
-mainPicture = "images/eirbot_logo_robot.jpg"
+mainPicture = "images/team_coupe.jpg"
+weight = 1
 draft = true
 layout = "construction"
 +++

@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+{{ partial "picSubheader.html" (dict "givenTitle" .Title "givenContent"
+(partial "rawMdToHTML" (dict "page" .Page "content" (default .Params.description .Params.pageDescription))) "bgPicture" .Params.mainPicture) }}
+
+{{ $childPages := .Pages.ByWeight }}
+{{ range seq (len $childPages) }}
+  {{ $page := index $childPages (sub . 1) }}
+  {{ partial "alternateDiv.html" (dict
+  "url" $page.RelPermalink
+  "mainPicture" $page.Params.mainPicture
+  "isDark" (cond (eq (mod . 2) 0) 1 0)
+  "contentTitle" $page.Title
+  "contentDescription" $page.Description
+  "altText" (default "" $page.Params.altText)
+  ) }}
+{{ end }}
+
+{{ .Content }}
+
+{{ end }}

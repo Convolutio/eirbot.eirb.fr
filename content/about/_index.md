@@ -2,11 +2,12 @@
 title = "À propos"
 description = "Vous souhaitez en savoir plus sur nous et notre école ?"
 layout = "about"
+mainPicture = "images/eirbot_logo_robot.jpg"
 [menus.main]
   weight = 10
 +++
 
-{{< pictp title="À propos de notre école" bg-picture="images/team_coupe.jpg"
+{{< pictp title="À propos de notre école" bg-picture="images/local.jpg"
 href="https://enseirb-matmeca.bordeaux-inp.fr/fr" >}}
 L’**ENSEIRB-MATMECA** est une école proposant six formations
 d’ingénieurs spécialistes de haut niveau reconnues par le monde

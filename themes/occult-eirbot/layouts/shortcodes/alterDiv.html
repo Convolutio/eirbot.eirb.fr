@@ -1,0 +1,8 @@
+{{ partial "alternateDiv.html" (dict
+"url" (default "" (.Get "href"))
+"mainPicture" (.Get "picture")
+"isDark" (cond (eq (.Get "dark") "true") 1 0)
+"contentTitle" (.Get "title")
+"contentDescription" (partial "rawMdToHTML" (dict "page" .Page "content" .Inner))
+"altText" (.Get "alt")
+) }}
