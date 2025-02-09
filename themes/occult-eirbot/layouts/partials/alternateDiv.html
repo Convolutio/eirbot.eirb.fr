@@ -9,9 +9,10 @@
   <a href="{{ $url }}">
   {{ end }}
     {{ with default (resources.Get "/images/placeholder.png") (resources.Get $mainPicture) }}
-    {{ $isClipart := in (slice ".png" ".svg") (path.Ext .RelPermalink | lower) }}
+    {{ $isClipart := in (slice "png" "svg") .MediaType.SubType }}
     <div class="back-img {{ cond $isClipart "clipart" "thumb" }}">
-      <img src="{{ .RelPermalink }}" alt="{{ $altText }}"/>
+      {{ partial "img" (dict "img" . "altText" $altText "classes" ""
+      "fitX" 800 "fitY" 300) }}
     </div>
     {{ end }}
     <div class="text">

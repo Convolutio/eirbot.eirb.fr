@@ -1,4 +1,5 @@
 {{ $bgPicLink := (default (resources.Get "images/placeholder.png") (resources.Get .bgPicture)).RelPermalink }}
+{{/* TODO: optimize the size of this picture */}}
 <div class="about_content">
   {{ if .givenLink }}
   <a href="{{ .givenLink }}">

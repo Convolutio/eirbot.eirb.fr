@@ -1,0 +1,11 @@
+{{/* .img : Image Resource; .altText : string; .classes: string ; .fitX: int;
+    .fitY: int  */}}
+{{/* Return a img tag with optimised webp encoding and reduced dimensions */}}
+{{ if not (eq .img.MediaType.SubType "svg") }}
+{{/* TODO: create several available sizes for several screen resolutions */}}
+{{ $img := .img.Process (printf "fit %dx%d webp" .fitX .fitY) }}
+<img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}"
+     height="{{ $img.Height }}" alt="{{ .altText }}" class="{{ .classes }}"/>
+{{ else }}
+<img src="{{ .img.RelPermalink }}" alt="{{ .altText }}" class="{{ .classes }}"/>
+{{ end }}
