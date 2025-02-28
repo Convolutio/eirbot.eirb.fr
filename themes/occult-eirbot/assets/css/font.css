@@ -1,10 +1,25 @@
 p, .form-inner {
     font-family: Lato;
-    font-size: 1.3em;
-    line-height: 1.6em; 
+    font-size: calc(1rem + 0.5vw);
+    line-height: 2rem; 
 }
 
 h3 {
     font-family: Arvo;
-    font-size: 2em;
+    font-size: calc(1.5rem + 1vw);
+    text-align: center; 
+}
+
+@media screen and (max-width: 500px) {
+
+p, .form-inner {
+    font-size: 0.8em;
+    line-height: 2em; 
+}
+
+h3 {
+    font-family: Arvo;
+    font-size: 1rem;
+}
+
 }

@@ -23,6 +23,10 @@ header {
     transition: 0.3s;
 }
 
+header > * {
+  margin: 0% 5px 0% 5px;
+}
+
 #header_logo {
     height: 100%;
     position: relative;
