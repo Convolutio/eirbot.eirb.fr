@@ -1,4 +1,4 @@
-{{ $bgPicLink := (default (resources.Get "images/placeholder.png") (resources.Get .bgPicture)).RelPermalink }}
+{{ $bgPicLink := (default (resources.Get "images/placeholder.png") (resources.Get .bgPicture)) }}
 {{/* TODO: optimize the size of this picture */}}
 <div class="about_content">
   {{ if .givenLink }}
@@ -6,9 +6,13 @@
   {{ end }}
   {{ $title := default "" .givenTitle }}
   {{ with $bgPicLink }}
-  <h3 style='background-image: url("{{ . }}");'>
-    {{ upper $title }}
-  </h3>
+  <div class="about-content-container">
+    {{ partial "img" (dict "img" . "altText" "placeholder_alt" "classes" ""
+    "fitX" 1920 "fitY" 1080) }}
+    <h3>
+      {{ upper $title }}
+    </h3>
+  </div>
   {{ end }}
   {{ .givenContent }}
   {{ if .givenLink }}

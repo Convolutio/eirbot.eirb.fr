@@ -1,5 +1,11 @@
-{{ $bgPicLink := (default (resources.Get "images/placeholder.png") (resources.Get .bgPicture)).RelPermalink }}
-<div class="subheader" style='background-image: url("{{ $bgPicLink }}");'>
-  <h3>{{ upper .givenTitle }}</h3>
-  {{ .givenContent }}
+{{ $bgPicLink := default (resources.Get "images/placeholder.png") (resources.Get .bgPicture) }}
+<div class="subheader">
+  <div class="subheader-container">
+    {{ partial "img" (dict "img" $bgPicLink "altText" "placeholder_alt" "classes" ""
+    "fitX" 1920 "fitY" 1080) }}
+  </div>
+  <div class="subheader-container">
+    <h3>{{ upper .givenTitle }}</h3>
+    {{ .givenContent }}
+  </div>
 </div>
