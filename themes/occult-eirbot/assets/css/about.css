@@ -30,7 +30,6 @@
   width: 100%;
   height: 50vh;
   object-fit: cover;
-  display: block;
 }
 
 .about_content a:hover img {

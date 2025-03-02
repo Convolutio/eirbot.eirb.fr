@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+img {
+    display : block;
+}
+
 html, body {
     height: 100%;
 }
