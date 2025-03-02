@@ -23,7 +23,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  backdrop-filter: blur(5px);
+  text-shadow:
+  -1px -1px 0 black,  
+  1px -1px 0 black,
+  -1px  1px 0 black,
+  1px  1px 0 black; /* Creates a solid border effect */
 }
 
 .about_content .about-content-container > img {

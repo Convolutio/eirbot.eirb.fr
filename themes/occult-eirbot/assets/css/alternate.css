@@ -29,13 +29,21 @@
 
 .subheader h3 {
   margin: 15px;
-  backdrop-filter: blur(5px);
+  text-shadow:
+  -1px -1px 0 black,  
+  1px -1px 0 black,
+  -1px  1px 0 black,
+  1px  1px 0 black; /* Creates a solid border effect */
 }
 
 .subheader p {
   text-align: center;
   margin-top: 20px;
-  backdrop-filter: blur(5px);
+  text-shadow:
+  -1px -1px 0 black,  
+  1px -1px 0 black,
+  -1px  1px 0 black,
+  1px  1px 0 black; /* Creates a solid border effect */
 }
 
 .alternate {
