@@ -1,7 +1,22 @@
 {{ define "extend_head" }}
 <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 {{ partial "head/css" "css/contact.css" }}
+{{ partial "head/js" "scripts/contact.js" }}
 {{ end }}
 {{ define "main" }}
   {{ .Content }}
+  <h3>{{ .Params.externalFormTitle | upper }}</h3>
+  <form id="contactForm" data-apiurl="{{ .Site.Params.contact.apiUrl }}" class="decor">
+      <div class="form-left-decoration"></div>
+      <div class="form-right-decoration"></div>
+      <div class="circle"></div>
+      <div class="form-inner">
+          <h1>{{ .Params.externalFormDescription }}</h1>
+          <input type="text" placeholder="Nom" name="name">
+          <input type="email" placeholder="Email" name="email">
+          <input type="text" placeholder="Sujet" name="subject">
+          <textarea placeholder="Message..." rows="5" name="content"></textarea>
+          <button type="submit">Envoyer</button>
+      </div>
+  </form>
 {{ end }}

@@ -3,7 +3,6 @@ languageCode = 'fr-fr'
 title = 'Eirbot'
 theme = "occult-eirbot"
 
-
 [[menus.main]]
 name = "Accueil"
 pageRef = '/'

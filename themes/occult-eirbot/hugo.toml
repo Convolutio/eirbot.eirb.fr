@@ -17,6 +17,10 @@ name = 'Tags'
 pageRef = '/tags'
 weight = 30
 
+[params]
+  [params.contact]
+    apiUrl = "http://localhost:3000"
+
 [module]
   [module.hugoVersion]
     extended = false
