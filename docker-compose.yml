@@ -18,6 +18,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: eirbot-eirb-fr-www
+    volumes:
+      - ./www:/usr/share/nginx/html
     restart: unless-stopped
     env_file:
       - .env
