@@ -24,6 +24,18 @@ Build in production mode the website in the `public` dir
 make build
 ```
 
+## Run the backend for the contact form
+
+```sh
+make install-contact-server
+```
+
+Fill in a `.env` file with your credentials as in the `.example.env`
+
+```sh
+make run-contact-server
+```
+
 ## Not functional for now
 
 - [x] contact form (call the api of the docker program)

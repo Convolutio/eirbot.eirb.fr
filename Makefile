@@ -6,3 +6,9 @@ test-prod:
 
 build:
 	hugo
+
+install-contact-server:
+	docker pull oia123/formbee-email-only
+
+run-contact-server:
+	./run.sh
