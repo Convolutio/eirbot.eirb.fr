@@ -39,4 +39,4 @@ make run-contact-server
 ## Not functional for now
 
 - [x] contact form (call the api of the docker program)
-- [] slides' captions for pretty listing
+- [ ] slides' captions for pretty listing
