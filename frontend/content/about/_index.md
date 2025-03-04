@@ -8,7 +8,7 @@ pageDescription = """Eirbot est un regroupement de **passionnés** qui forment u
 robotique. L'association permet aussi la réalisation de nombreux projets
 personnels (solveur de Rubik's cube, voitures télécommandées...)."""
 
-date = '9 Feb 2025'
+date = '2025-02-09T00:00:00-00:00'
 
 mainPicture = "images/eirbot_logo_robot.jpg"
 hostPicture = "images/team_coupe.jpg"
