@@ -1,5 +1,7 @@
 # Eirbot's new website
 
+# OUTDATED README
+
 ## Development
 
 Serve the website in dev mode with the draft pages
