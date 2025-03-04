@@ -1,0 +1,26 @@
+services:
+  eirbot-eirb-fr-mails:
+    image: oia123/formbee-email-only
+    container_name: eirbot-eirb-fr-mails
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      EMAIL_PROVIDER: ${EMAIL_PROVIDER}
+      EMAIL_USER: ${EMAIL_USER}
+      EMAIL_PASSWORD: ${EMAIL_PASSWORD}
+      EMAIL_TO: ${EMAIL_TO}
+      ORIGIN: ${ORIGIN}
+      SMTP_PORT: ${SMTP_PORT}
+
+  eirbot-eirb-fr-www:
+    image: nginx:alpine
+    container_name: eirbot-eirb-fr-www
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./nginx.default.conf:/etc/nginx/conf.d/default.conf
+      - ./frontend/public:/usr/share/nginx/html
+    ports:
+      - '${STORE_PORT:-5173}:80'
