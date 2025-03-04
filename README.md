@@ -18,7 +18,7 @@ NB: the contact form won't work.
 
 ## Production with the contact mail server
 
-Run the container
+Fill in the `.env` file from the `.example.env`. Then, run the container
 
 ```sh
 docker compose up -d
