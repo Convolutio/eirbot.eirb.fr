@@ -1,42 +1,39 @@
 # Eirbot's new website
 
-# OUTDATED README
-
 ## Development
 
-Serve the website in dev mode with the draft pages
+With the draft page
 
-```sh
-make dev
+```
+hugo serve -D
 ```
 
-## Test the production 
+Without
 
-Serve the website in production mode without the draft pages
-
-```sh
-make test-prod
+```
+hugo serve
 ```
 
-## Build the website
+NB: the contact form won't work.
 
-Build in production mode the website in the `public` dir
+## Production with the contact mail server
 
-```sh
-make build
-```
-
-## Run the backend for the contact form
+Run the container
 
 ```sh
-make install-contact-server
+docker compose up -d
 ```
 
-Fill in a `.env` file with your credentials as in the `.example.env`
+Then in the `frontend/public` directory, transfer the built file.
 
 ```sh
-make run-contact-server
+hugo
 ```
+
+Or use sftp for a remote building.
+
+Then, the website will be available on `localhost:${STORE_POINT}`, as defined
+in the `.env`
 
 ## Not functional for now
 
