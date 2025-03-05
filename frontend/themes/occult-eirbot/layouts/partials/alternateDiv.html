@@ -12,7 +12,7 @@
     {{ $isClipart := in (slice "png" "svg") .MediaType.SubType }}
     <div class="back-img {{ cond $isClipart "clipart" "thumb" }}">
       {{ partial "img" (dict "img" . "altText" $altText "classes" ""
-      "fitX" 800 "fitY" 300) }}
+      "fitX" 800 "fitY" 300 "fill" true) }}
     </div>
     {{ end }}
     <div class="text">

@@ -105,7 +105,6 @@
 
 .back-img.thumb img {
   object-fit: cover;
-  filter: blur(1.5px);
 }
 
 .back-img.clipart img {
