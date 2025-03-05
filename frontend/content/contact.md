@@ -4,7 +4,7 @@ description = "Vous souhaitez discuter avec nous ?"
 externalFormTitle = "Demande de contact extérieur"
 externalFormDescription = "Vous souhaitez nous parler ?"
 layout = "contact"
-mainPicture = "images/mail.png"
+mainPicture = "images/mail.svg"
 [menus.main]
   weight = 60
 +++
