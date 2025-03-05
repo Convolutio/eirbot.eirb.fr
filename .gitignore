@@ -1,3 +1,4 @@
-public
 frontend/resources/_gen
 .env
+frontend/public/**
+!frontend/public/.gitkeep
